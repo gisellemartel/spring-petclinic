@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'docker-compose.yml'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
